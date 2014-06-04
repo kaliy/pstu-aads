@@ -4,6 +4,9 @@ class Node implements Comparable<Node> {
     Integer index
     List<Node> nodes = []
     String toString() {
+        if (!nodes) {
+            return "$index (empty)"
+        }
         nodes.collect() { "$index - $it.index" }.join("\n")
     }
 
