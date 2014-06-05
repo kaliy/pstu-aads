@@ -52,7 +52,7 @@ class AdjacencyMatrixBuilder {
 
         def matrix = "0 0 0 1\n1 1 0 1\n0 0 1 0\n1 1 0 1"
         println "From matrix:\n$matrix\n"
-        println builder.fromMatrix(matrix).join("\n")
+        println builder.fromMatrix(matrix).collect{it.toNodesListString()}.join("\n")
 
     }
 

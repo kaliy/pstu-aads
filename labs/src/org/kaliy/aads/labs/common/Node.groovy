@@ -3,11 +3,14 @@ package org.kaliy.aads.labs.common
 class Node implements Comparable<Node> {
     Integer index
     List<Node> nodes = []
-    String toString() {
+    String toNodesListString() {
         if (!nodes) {
             return "$index (empty)"
         }
         nodes.collect() { "$index - $it.index" }.join("\n")
+    }
+    String toString() {
+        return index as String
     }
 
     boolean equals(o) {
