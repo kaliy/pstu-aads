@@ -36,4 +36,16 @@ class KFWeightedEdge extends DefaultWeightedEdge implements Comparable<KFWeighte
 //        println ("$weight -- $o.weight -- ${weight.compareTo(o.weight)}")
         weight.compareTo(o.weight)
     }
+
+    public double getWeight () {
+        super.getWeight()
+    }
+
+    def getSource() {
+        super.getSource()
+    }
+
+    def getTarget() {
+        super.getTarget()
+    }
 }
